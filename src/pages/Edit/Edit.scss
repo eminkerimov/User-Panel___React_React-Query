@@ -1,0 +1,15 @@
+.edit {
+    background: #11998e;
+    background: -webkit-linear-gradient(to right, #38ef7d, #11998e);
+    background: linear-gradient(to right, #38ef7d, #11998e);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 50px;
+    gap: 50px;
+
+    .createModal__form {
+        width: 70%;
+    }
+}

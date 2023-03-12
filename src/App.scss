@@ -1,0 +1,49 @@
+// Buttons
+.btn__section {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 30px;
+
+  button {
+      width: 49.5%;
+      justify-content: center;
+  }
+}
+
+.btn__contained,
+.btn__outlined {
+    border-radius: 5px;
+    padding: 10px 25px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    &:not(:disabled):hover{
+        transform: translateY(0.5px);
+    }
+    &:disabled {
+        background: #8b9398;
+        color: #fff;
+        cursor: inherit;
+    }
+}
+
+.btn__outlined {
+    background: #e6efff;
+    color: #0d6efd;
+    border: 2px solid #0d6efd;
+    &:not(:disabled):hover{
+        background: #d6e5ff;
+    }
+}
+
+.btn__contained {
+  border: none;
+    background: #0d6efd;
+    color: #fff;
+    &:not(:disabled):hover{
+        background: #0a52bd;
+    }
+}

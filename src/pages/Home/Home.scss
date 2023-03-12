@@ -1,0 +1,102 @@
+.home {
+    background: #acb6e5;
+    background: -webkit-linear-gradient(to right, #86fde8, #acb6e5);
+    background: linear-gradient(to right, #86fde8, #acb6e5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 50px;
+    gap: 50px;
+
+    &__head {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        gap: 50px;
+
+        &__search {
+            display: flex;
+            height: 44px;
+
+            input {
+                border: 1px solid #0d6efd;
+                border-top-left-radius: 5px;
+                border-bottom-left-radius: 5px;
+                width: 300px;
+                padding: 0 15px;
+
+                &:focus-visible {
+                    outline: none;
+                }
+
+                &::placeholder {
+                    font-size: 15px;
+                }
+            }
+
+            input.disabled {
+                border: 1px solid #8b9398;
+            }
+
+            button {
+                border-radius: 0 5px 5px 0;
+            }
+        }
+    }
+
+    &__users {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+
+        &__title {
+            background: #0d6efd;
+            display: flex;
+            border-top-left-radius: 7px;
+            border-top-right-radius: 7px;
+
+            div {
+                color: #fff;
+                font-weight: 600;
+            }
+
+        }
+
+        &__title div,
+        &__item div {
+            padding: 10px;
+            &:nth-child(1){
+                width: 25%;
+            }
+            &:nth-child(2){
+                width: 20%;
+            }
+            &:nth-child(3){
+                width: 20%;
+            }
+            &:nth-child(4){
+                width: 20%;
+            }
+            &:nth-child(5){
+                width: 10%;
+            }
+        }
+
+        &__item {
+            background: #fff;
+            display: flex;
+            flex-direction: row;
+
+            .editBtn {
+                color: #0d6efd;
+                cursor: pointer;
+            }
+
+            .deleteBtn {
+                color: red;
+                cursor: pointer;
+            }
+        }
+    }
+}

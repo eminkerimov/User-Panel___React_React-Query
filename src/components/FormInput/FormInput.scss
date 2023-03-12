@@ -1,0 +1,39 @@
+.formInput {
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+    margin-bottom: 30px;
+    position: relative;
+
+    label {
+        color: #172645;
+        font-weight: 700;
+    }
+
+    .required::after {
+        content: "*";
+        color: red;
+        margin-left: 2px;
+        font-size: 20px;
+    }
+
+    input {
+        margin-top: 5px;
+        height: 40px;
+        border-radius: 5px;
+        border: 1px solid #8b9398;
+        padding: 15px;
+
+
+        &:invalid[focused="true"] {
+            outline: 1px solid red;
+            border: none;
+        }
+
+        &:focus {
+            outline: 2px solid #1976d2;
+            border: none;
+        }
+    }
+
+}
